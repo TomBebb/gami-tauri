@@ -1,9 +1,9 @@
-import { lazy } from 'solid-js';
-import type { RouteDefinition } from '@solidjs/router';
+import { lazy } from 'solid-js'
+import type { RouteDefinition } from '@solidjs/router'
 
 export const routes: RouteDefinition[] = [
     {
-        path: "/",
-        component: lazy(() => import("./views/LibraryView"))
-    }
+        path: '/',
+        component: lazy(() => import('./views/LibraryView')),
+    },
 ]
