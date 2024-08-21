@@ -1,7 +1,6 @@
 <script setup lang="ts">
 import { ref } from "vue";
 import { invoke } from "@tauri-apps/api/tauri";
-import {NxButton, NInput} from "naive-ui"
 const greetMsg = ref("");
 const name = ref("");
 
@@ -13,8 +12,8 @@ async function greet() {
 
 <template>
   <form class="row">
-    <NInput id="greet-input" v-model:value="name" placeholder="Enter a name..." />
-    <NxButton type="primary" @click="greet">Greet</NxButton>
+    <input class="input" id="greet-input" v-model="name" placeholder="Enter a name..." />
+    <button class="btn btn-primary" @click="greet">Greet</button>
   </form>
 
   <p>{{ greetMsg }}</p>
