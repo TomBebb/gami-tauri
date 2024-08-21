@@ -11,9 +11,9 @@ async function greet() {
 </script>
 
 <template>
-  <form class="row">
-    <input class="input" id="greet-input" v-model="name" placeholder="Enter a name..." />
-    <button class="btn btn-primary" @click="greet">Greet</button>
+  <form class="flex gap-8" @submit="greet">
+    <input class="input input-accent" id="greet-input" v-model="name" placeholder="Enter a name..." />
+    <button type="submit" class="btn btn-primary">Greet</button>
   </form>
 
   <p>{{ greetMsg }}</p>
