@@ -1,5 +1,7 @@
 <script setup lang="ts">
 import { invoke } from '@tauri-apps/api/tauri'
+import Button from 'primevue/button'
+import InputText from 'primevue/inputtext'
 import { ref } from 'vue'
 const name = ref('')
 const greetMsg = ref('')
@@ -12,14 +14,9 @@ async function greet() {
 </script>
 
 <template>
-  <div class="flex gap-8">
-    <input
-      class="input input-accent"
-      id="greet-input"
-      v-model="name"
-      placeholder="Enter a name..."
-    />
-    <button @click="greet" class="btn btn-primary">Greet</button>
+  <div class="flex flex-column gap-8">
+    <Button @click="greet" icon="pi pi-user" label="Greet" />
+    <InputText v-model="name" placeholder="Enter a name..." />
   </div>
 
   <p>{{ greetMsg }}</p>

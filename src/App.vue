@@ -1,9 +1,10 @@
 <script setup lang="ts">
 import { RouterLink, RouterView } from 'vue-router'
+import Greet from './components/Greet.vue'
 </script>
 
 <template>
-  <div class="flex flex-col">
+  <div class="flex flex-column">
     <div class="navbar bg-base-300 rounded-box">
       <div class="flex-1 px-2 lg:flex-none">
         <a class="text-lg font-bold" href="/"> Gami </a>
@@ -19,7 +20,7 @@ import { RouterLink, RouterView } from 'vue-router'
         </div>
       </div>
     </div>
-    <div class="flex flex-col items-center gap-2">
+    <div class="flex flex-column items-center gap-2">
       <h1>Welcome to Tauri!</h1>
 
       <p>Click on the Tauri, Vite, and Vue logos to learn more.</p>
