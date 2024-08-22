@@ -14,7 +14,7 @@ const App: Component = () => {
                 </div>
                 <div class="flex flex-1 justify-end px-2">
                     <div class="flex items-stretch  gap-2">
-                        <a class="btn btn-primary rounded-btn" href="/settings">
+                        <a class="btn btn-primary rounded-btn" href="/">
                             Library
                         </a>
                         <a
