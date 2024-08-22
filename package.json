@@ -8,7 +8,7 @@
     "build": "vite build",
     "preview": "vite preview",
     "tauri": "tauri",
-    "format": "prettier src --write"
+    "format": "prettier src ./*.config.* --write"
   },
   "dependencies": {
     "@solidjs/router": "^0.14.3",
